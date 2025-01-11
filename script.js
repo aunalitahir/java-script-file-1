@@ -1,12 +1,128 @@
-let doorOpen = prompt("Is the door open? (yes or no):");
-   
-    if (doorOpen === "yes") {
-        console.log("Alarm Triggered");
-    } else if (doorOpen === "no") {
-        console.log("All Safe");
-    } else {
-        console.log("Invalid input. Please answer with 'yes' or 'no'.");
+function sumFirstAndLastDigit(num) {
+    let lastDigit = num % 10;
+    let firstDigit;
+
+    while (num >= 10) { 
+        num = Math.floor(num / 10);
     }
+    firstDigit = num; 
+
+    const sum = firstDigit + lastDigit; 
+    console.log("Sum of first and last digit:", sum);
+}
+let number = 34567; 
+sumFirstAndLastDigit(number);
+
+
+
+
+
+
+/*&function countDigits(num) {
+    let count = 0;
+    while (num > 0) {
+        num = Math.floor(num / 10); 
+        count++; 
+    }
+    console.log("Number of digits:", count);
+}
+let num = 12345; /
+countDigits(num);
+
+
+
+function multiplicationTable(number) {
+    let i = 1; 
+    while (i <= 10) { 
+        console.log(`${number} x ${i} = ${number * i}`);
+        i++; 
+    }
+}
+let number = 5; 
+multiplicationTable(number);
+
+
+
+
+function sumOddNumbers(n) {
+    let sum = 0;
+    let i = 1; 
+    while (i <= n) {
+        if (i % 2 !== 0) { 
+            sum += i; 
+        }
+        i++; 
+    }
+    console.log("Sum of odd numbers:", sum);
+}
+
+let n = 10; 
+sumOddNumbers(n);
+
+
+
+function sumEvenNumbers(n) {
+    let sum = 0;
+    let i = 1; 
+    while (i <= n) {
+        if (i % 2 === 0) { 
+            sum += i; 
+        }
+        i++; 
+    }
+    console.log("Sum of even numbers:", sum);
+}
+let n = 10; 
+sumEvenNumbers(n);
+
+
+
+
+
+
+function sumNaturalNumbers(n) {
+    let sum = 0;
+    let i = 1; 
+    while (i <= n) {
+        sum += i; 
+        i++;
+    }
+    console.log("Sum of natural numbers:", sum);
+}
+let n = 10; 
+sumNaturalNumbers(n);
+
+
+
+
+
+function printOddNumbers() {
+    let i = 1; 
+    while (i <= 100) {
+        if (i % 2 !== 0) { 
+            console.log(i); 
+        }
+        i++; 
+    }
+}
+
+printOddNumbers();
+
+
+
+
+
+function printEvenNumbers() {
+    let i = 1;
+    while (i <= 100) {
+        if (i % 2 === 0) { 
+            console.log(i); 
+        }
+        i++; 
+    }
+}
+
+printEvenNumbers();
 
 
 
@@ -15,93 +131,40 @@ let doorOpen = prompt("Is the door open? (yes or no):");
 
 
 
+function printAlphabets() {
+    let charCode = 97; 
+    while (charCode <= 122) { 
+        console.log(String.fromCharCode(charCode)); 
+        charCode++; 
+    }
+}
+
+printAlphabets();
 
 
 
-
-
-
-
-
-
-
-
-/*let password = prompt("Enter your password:");
-
-// Check the length of the password
-if (password.length >= 8) {
-    console.log("Strong Password");
-} else if (password.length >= 5 && password.length <= 7) {
-    console.log("Moderate Password");
-} else {
-    console.log("Weak Password");
+function printNaturalNumbersReverse(n) {
+    let i = n;
+    while (i >= 1) {
+        console.log(i); 
+        i--; 
+    }
 }
 
 
+let n = 10; 
+printNaturalNumbersReverse(n);
 
 
-/*let weather =prompt ("Enter the weather condition(Sunny,Rainy Cold):").toLowerCase();
-if (weather =="Sunny"){
-    console.log("Wear a sun glasses");
+
+
+
+function printNaturalNumbers(n) {
+    let i = 1; 
+    while (i <= n) {
+        console.log(i); 
+        i++; 
+    }
 }
-else if (weather =="Rainy"){
-    console.log("take an umbrella");
-}
-else if (weather =="Cold"){
-    console.log("wear a jacket");
-}
-
-
-
-
-let temperature = parseFloat(prompt("Enter the water temperture in Celsius:"));
-if (temperature <=0){
-    console.log("Freezing");
-}
-else if (temperature >0 && temperature<=15){
-    console.log("cold");
-}
-else if (temperature >15 && temperature<=30){
-    console.log("warm");
-}
-else if (temperature >30){
-    console.log("Freezing")
-}
-
-
-
-let color = prompt("Enter a traffic light color (Red, Yellow, Green):");
-if (color === "red") {
-    console.log("Stop");
-} else if (color=== "yellow") {
-    console.log("Slow Down");
-} else if (color === "green") {
-    console.log("Go");
-} else {
-    console.log("Invalid Color");
-}
-
-
-
-
-
-
- var userInput = prompt("enter 1 to turn ON the light or 0 to turn OFF the light");
-if (userInput ==0){
-    console.log("The light is OFF");
-}
-else if (userInput ==1){
-    console.log("The light is ON");
-}
-else{
-    console.log("invalid input")
-}*/
-
-
-
-
-
-
-
-
-
+let n = 10; 
+printNaturalNumbers(n);
